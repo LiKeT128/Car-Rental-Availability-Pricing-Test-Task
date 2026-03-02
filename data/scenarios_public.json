@@ -1,0 +1,139 @@
+{
+    "scenarios": [
+        {
+            "scenarioId": "S1",
+            "name": "Early March – overlap + soft conflicts",
+            "query": {
+                "from": "2026-03-03",
+                "to": "2026-03-05"
+            },
+            "expected": [
+                {
+                    "carId": "C-100",
+                    "model": "Skoda Octavia 1.6 TDI",
+                    "isAvailable": false,
+                    "conflicts": 2,
+                    "estimatedPrice": null
+                },
+                {
+                    "carId": "C-200",
+                    "model": "Toyota Corolla Hybrid",
+                    "isAvailable": false,
+                    "conflicts": 1,
+                    "estimatedPrice": null
+                },
+                {
+                    "carId": "C-300",
+                    "model": "VW Transporter T6",
+                    "isAvailable": true,
+                    "conflicts": 2,
+                    "estimatedPrice": 158
+                },
+                {
+                    "carId": "C-400",
+                    "model": "Tesla Model 3",
+                    "isAvailable": true,
+                    "conflicts": 0,
+                    "estimatedPrice": null
+                },
+                {
+                    "carId": "C-500",
+                    "model": "Kia Ceed SW",
+                    "isAvailable": true,
+                    "conflicts": 0,
+                    "estimatedPrice": null
+                }
+            ]
+        },
+        {
+            "scenarioId": "S2",
+            "name": "Boundary check – reservation ends at from is NOT overlap",
+            "query": {
+                "from": "2026-03-07",
+                "to": "2026-03-09"
+            },
+            "expected": [
+                {
+                    "carId": "C-100",
+                    "model": "Skoda Octavia 1.6 TDI",
+                    "isAvailable": true,
+                    "conflicts": 0,
+                    "estimatedPrice": 78
+                },
+                {
+                    "carId": "C-200",
+                    "model": "Toyota Corolla Hybrid",
+                    "isAvailable": true,
+                    "conflicts": 0,
+                    "estimatedPrice": 90
+                },
+                {
+                    "carId": "C-300",
+                    "model": "VW Transporter T6",
+                    "isAvailable": true,
+                    "conflicts": 2,
+                    "estimatedPrice": 158
+                },
+                {
+                    "carId": "C-400",
+                    "model": "Tesla Model 3",
+                    "isAvailable": true,
+                    "conflicts": 0,
+                    "estimatedPrice": null
+                },
+                {
+                    "carId": "C-500",
+                    "model": "Kia Ceed SW",
+                    "isAvailable": true,
+                    "conflicts": 0,
+                    "estimatedPrice": null
+                }
+            ]
+        },
+        {
+            "scenarioId": "S3",
+            "name": "Mid March – Tesla reserved but invalid price still null",
+            "query": {
+                "from": "2026-03-16",
+                "to": "2026-03-18"
+            },
+            "expected": [
+                {
+                    "carId": "C-100",
+                    "model": "Skoda Octavia 1.6 TDI",
+                    "isAvailable": true,
+                    "conflicts": 0,
+                    "estimatedPrice": 78
+                },
+                {
+                    "carId": "C-200",
+                    "model": "Toyota Corolla Hybrid",
+                    "isAvailable": true,
+                    "conflicts": 0,
+                    "estimatedPrice": 90
+                },
+                {
+                    "carId": "C-300",
+                    "model": "VW Transporter T6",
+                    "isAvailable": true,
+                    "conflicts": 2,
+                    "estimatedPrice": 158
+                },
+                {
+                    "carId": "C-400",
+                    "model": "Tesla Model 3",
+                    "isAvailable": false,
+                    "conflicts": 1,
+                    "estimatedPrice": null
+                },
+                {
+                    "carId": "C-500",
+                    "model": "Kia Ceed SW",
+                    "isAvailable": true,
+                    "conflicts": 0,
+                    "estimatedPrice": null
+                }
+            ]
+        }
+    ]
+}

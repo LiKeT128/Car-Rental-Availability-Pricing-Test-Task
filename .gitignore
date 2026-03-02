@@ -1,0 +1,20 @@
+# Java
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
+backend/*.class
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.log
+
+# OS
+Thumbs.db
+.DS_Store

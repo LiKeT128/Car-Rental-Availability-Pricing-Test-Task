@@ -1,0 +1,33 @@
+{
+  "cars": [
+    {
+      "carId": "C-100",
+      "model": "Skoda Octavia 1.6 TDI",
+      "class": "compact",
+      "pricePerDay": 39
+    },
+    {
+      "carId": "C-200",
+      "model": "Toyota Corolla Hybrid",
+      "class": "compact",
+      "pricePerDay": 45
+    },
+    {
+      "carId": "C-300",
+      "model": "VW Transporter T6",
+      "class": "van",
+      "pricePerDay": 79
+    },
+    {
+      "carId": "C-400",
+      "model": "Tesla Model 3",
+      "class": "electric",
+      "pricePerDay": 0
+    },
+    {
+      "carId": "C-500",
+      "model": "Kia Ceed SW",
+      "class": "wagon"
+    }
+  ]
+}
