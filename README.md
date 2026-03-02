@@ -11,14 +11,14 @@ Toto je riešenie fullstack zadania pre systém overovania dostupnosti a cien pr
 ## 🚀 Spustenie projektu
 
 ### 1. Backend (Java Spring Boot)
-Backend beží na porty **8080**.
+Backend beží na porte **8080**.
 ```bash
 cd backend
 java -D"maven.multiModuleProjectDirectory=$PWD" -cp ".mvn\wrapper\maven-wrapper.jar" org.apache.maven.wrapper.MavenWrapperMain spring-boot:run
 ```
 
 ### 2. Frontend (Next.js)
-Frontend beží na porty **3000**.
+Frontend beží na porte **3000**.
 ```bash
 cd frontend
 npm install
@@ -40,7 +40,7 @@ java -D"maven.multiModuleProjectDirectory=$PWD" -cp ".mvn\wrapper\maven-wrapper.
 ```
 
 ---
-## ENG ver
+## 🇺🇸 ENG Version
 
 This is a fullstack assignment solution for a car rental availability and pricing verification system. The project consists of a **Java Spring Boot** backend and a **Next.js** (App Router) frontend.
 
@@ -53,7 +53,7 @@ This is a fullstack assignment solution for a car rental availability and pricin
 ## 🚀 Project launch
 
 ### 1. Backend (Java Spring Boot)
-The backend runs on ports **8080**.
+The backend runs on port **8080**.
 ```bash
 cd backend
 java -D"maven.multiModuleProjectDirectory=$PWD" -cp ".mvn\wrapper\maven-wrapper.jar" org.apache.maven.wrapper.MavenWrapperMain spring-boot:run
@@ -74,8 +74,9 @@ npm run dev
 - `DECISIONS.md`: Log of important decisions and data analysis.
 
 ## 🧪 Testing
-The backend contains unit tests to verify the correctness of the overlay logic and conflict calculation.
+The backend contains unit tests.
 Run the tests:
 ```bash
 cd backend
 java -D"maven.multiModuleProjectDirectory=$PWD" -cp ".mvn\wrapper\maven-wrapper.jar" org.apache.maven.wrapper.MavenWrapperMain test
+```
